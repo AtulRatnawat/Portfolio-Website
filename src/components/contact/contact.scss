@@ -1,0 +1,200 @@
+.contact{
+    // background-color: white;
+    display: flex;
+    flex-direction: row;
+
+    --first-hue: 250;
+    --first-color: hsl(var(--first-hue), 66%, 75%);
+    color: black;
+    
+    .left{
+        flex: 1;
+        // background-color: black;
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            .top{
+                margin-top: 74px;
+                flex: 0.77;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
+            .bottom{
+                flex: 0.23;
+                overflow: hidden;
+                
+                .card{
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: row;
+                    width: 400px;
+                    height: 45%;
+                    border-radius: 10px;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 40px -8px violet;
+                    background-color: white;
+                    overflow: hidden;
+                    .icon{
+                        margin-left: 30px;
+                        margin-top: 21px;
+                        width: 30px;
+                        height: 40px;
+                        transform: scale(1.8);
+                    }
+                    .text{
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 10px;
+                        margin-top: 5px;
+                        
+                        
+                        .up{
+                            font-size: 20px;
+                        }
+                        .down{
+                            font-size: 20px;
+                            font-weight: 700;
+                            color: #562af0;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .right{
+        flex: 1;
+        // background-color: black;
+        
+
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .card{
+                width: 400px;
+                height: 80%;
+                border-radius: 10px;
+                box-shadow: 0px 0px 80px -8px rgb(185, 119, 219);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 20px;
+                background-color: white;
+
+                .top{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    h2{
+                        font-style: 30px;
+                    }
+                }
+
+                .center{
+                    
+                    display: flex;
+                    align-items: center;
+                    // justify-content: space-around;
+                    form{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        input{
+                            width: 350px;
+                            margin-top: 0;
+                            margin-bottom: 20px;
+                            padding: 10px;
+                            border: 2px solid transparent;
+                            border-radius: 8px;
+                            background-color: #f7f6ff;
+                            font-size: 16px;
+                            text-indent: 12px;
+                        }
+            
+                        textarea{
+                            margin-bottom: 10px;
+                            width: 360px;
+                            height: 200px;
+                            border: 2px solid transparent;
+                            border-radius: 8px;
+                            background-color: #f7f6ff;
+                            font-size: 16px;
+                            text-indent: 12px;
+                        }
+              
+                        button{
+                            width: 150px;
+                            height: 50px;
+                            color: white;
+                            border-radius: 12px;
+                            background-color: #562af0;
+                            border: none;
+                            font-weight: 500;
+                            cursor: pointer;
+                            font-size: 15px;
+                            margin-left: 20px;
+
+                            &focus{
+                                outline: none;
+                            }        
+                        }
+                        span{
+                            color: red;
+                        }
+                    }
+                }
+
+                .bottom{
+                    
+                    .pack{
+                        display: flex;
+                        flex-direction: row;
+                        margin-left: 20px ;
+                        margin-top: 10px;
+                        justify-content: center;
+                        
+                        .link1{
+                            width: auto;
+                            a{
+                                color: inherit;
+                                text-decoration: none;
+                            }
+                        }
+                        .link2{
+                            width: auto;
+                            margin-left: 10px;
+                            a{
+                                color: inherit;
+                                text-decoration: none;
+                            }
+                        }
+                        .link3{
+                            width: auto;
+                            margin-left: 10px;
+                            a{
+                                color: inherit;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.app{
+    height: 100vh;
+
+    .sections{
+        --first-hue: 250;
+        --second-hue: 219;
+        --body-color: hsl(var(--second-hue),48%,8%);
+        --text-color: hsl(var(--second-hue), 8%, 75%);
+        background-color: var(--body-color);
+        color: var(--text-color);
+
+        
+        width: 100%;
+        height: calc(100vh - 70px);
+        position: relative;
+        top: 70px;
+        scroll-behavior: smooth; //when click on logo
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none; //for firefox
+        &::-webkit-scrollbar{  //for other browsers
+            display: none;
+        }
+        > *{
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start;
+        }
+    }
+}
